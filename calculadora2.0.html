@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora 2.0</title>
+    <link rel="stylesheet" href="calculadora2.0.css">
+</head>
+<body>
+    <input id="nums"><br>
+    <button onclick="parametro(7)">7</button>
+    <button onclick="parametro(8)">8</button>
+    <button onclick="parametro(9)">9</button>
+    <button onclick="parametro('+')">+</button>
+    <br>
+    <button onclick="parametro(4)">4</button>
+    <button onclick="parametro(5)">5</button>
+    <button onclick="parametro(6)">6</button>
+    <button onclick="parametro('-')">-</button>
+    <br>
+    <button onclick="parametro(1)">1</button>
+    <button onclick="parametro(2)">2</button>
+    <button onclick="parametro(3)">3</button>
+    <button onclick="parametro('*')">x</button>
+    <br>
+    <button onclick="parametro(0)">0</button>
+    <button onclick="parametro('.')">.</button>
+    <button onclick="Resultado()">=</button>
+    <button onclick="Apagar()">del</button>
+</body>
+</html>
+
+<script>
+    function Resultado(){
+        num1Var = document.getElementById('nums')
+        resultado = eval(num1Var.value)
+        num1Var.value = resultado
+    }
+    function parametro(numero){
+        num1Var = document.getElementById('nums')
+        num1Var.value = num1Var.value + numero
+    }
+    function Apagar(){
+        num1Var = document.getElementById('nums')
+        num1Var.value = ""
+    }
+</script>
