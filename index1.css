@@ -1,0 +1,29 @@
+h1{
+    text-align: center;
+    color: blueviolet;
+    font: bold;}
+
+h5{
+    position: absolute;
+    top: 3%;
+    left:44%;}
+
+button {
+    position: relative;
+    top: 15%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    padding: 10px 30px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+  button:hover {
+    background-color:rgb(65, 62, 62);}
+
+
