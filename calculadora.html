@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <label>Número 1</label><br>
+    <input type="text" id="num1"><br>
+    <label>Número 2</label><br>
+    <input type="text" id="num2"><br><br>
+    <button onclick="Somar()">+</button>
+    <button onclick="Subtrair()">-</button>
+    <button onclick="Multiplicar()">x</button>
+    <button onclick="Dividir()">/</button><br><br>
+    <label>Resultado</label><br>
+    <input id="resultado">
+</body>
+</html>
+
+<script>
+
+    function Somar(){
+        num1Var = document.getElementById('num1')
+        num2Var = document.getElementById('num2')
+        resultado = document.getElementById('resultado')
+        resultado.value = Number(num1Var.value) + Number(num2Var.value)  
+    }
+    function Subtrair(){
+        num1Var = document.getElementById('num1')
+        num2Var = document.getElementById('num2')
+        resultado = document.getElementById('resultado')
+        resultado.value = Number(num1Var.value) - Number(num2Var.value)  
+    }
+    function Multiplicar(){
+        num1Var = document.getElementById('num1')
+        num2Var = document.getElementById('num2')
+        resultado = document.getElementById('resultado')
+        resultado.value = Number(num1Var.value) * Number(num2Var.value)  
+    }
+    function Dividir(){
+        num1Var = document.getElementById('num1')
+        num2Var = document.getElementById('num2')
+        resultado = document.getElementById('resultado')
+        resultado.value = Number(num1Var.value) / Number(num2Var.value)  
+    }
+</script>
